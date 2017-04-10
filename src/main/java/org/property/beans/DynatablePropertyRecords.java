@@ -31,8 +31,8 @@ public class DynatablePropertyRecords {
         this.propertySize=property.getPropertySize();
         this.propertyType=property.getPropertyType();
         this.propertyArea=property.getPropertyArea();
-        this.ownerName =property.getUser().getName();
-        this.ownerEmail =property.getUser().getEmail();
+        this.ownerName =property.getUser()!=null?property.getUser().getName():null;
+        this.ownerEmail =property.getUser()!=null?property.getUser().getEmail():null;
     }
 
     public Integer getId() {

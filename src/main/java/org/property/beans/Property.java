@@ -101,4 +101,8 @@ public class Property {
         this.user = user;
     }
 
+    public String toString(){
+        return id+" "+propertyName+" "+propertyAddress+" "+propertyPrice+" "+propertySize+" "+propertyType+" "+propertyArea;
+    }
+
 }
